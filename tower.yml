@@ -1,4 +1,4 @@
-t---
+---
 - name: Use collection to watch Tower itself
   hosts: all
   tasks:
