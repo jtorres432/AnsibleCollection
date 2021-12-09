@@ -1,1 +1,4 @@
-
+---
+- name: Colelctions test with insights
+  hosts: all
+  
