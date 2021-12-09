@@ -4,7 +4,7 @@
   tasks:
   - name: List all insights secceded jobs
     ansible.tower.tower_job_list:
-      status: succesful
+      status: successful
       query: {"playbook": "insights.yml"}
       tower_host: 192.168.122.221
       tower_username: admin
