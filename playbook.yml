@@ -3,8 +3,7 @@
   hosts: all
   tasks:
   
-  - name: Register client
+  - name: Register the insights client
     insights_register:
       state: present
-      force_reregster: true
   
