@@ -1,0 +1,17 @@
+---
+- name: Use collection to watch Tower itself
+  hosts: all
+  tasks:
+  - name: List all insights secceded jobs
+    redhat.tower.tower_job_list:
+      status: succesful
+      query: {"playbook": "insights.yml"}
+      tower_host: 192.168.122.221
+      tower_user: admin
+      tower_password: redhat
+      validate_certs: no
+    register: jobs
+    
+  - name: Print
+    debug:
+      msg: "{{ jobs }}"
