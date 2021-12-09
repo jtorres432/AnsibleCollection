@@ -2,7 +2,7 @@
 - name: Use collection to watch Tower itself
   hosts: all
   tasks:
-  - name: List all insights secceded jobs
+  - name: List all insights succeded jobs
     ansible.tower.tower_job_list:
       status: successful
       query: {"playbook": "insights.yml"}
