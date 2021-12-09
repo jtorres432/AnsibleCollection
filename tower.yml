@@ -14,4 +14,4 @@
     
   - name: Print
     debug:
-      msg: "{{ jobs.stdout_id }}"
+      msg: "{{ jobs.stdout }}"
