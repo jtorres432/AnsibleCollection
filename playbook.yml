@@ -8,5 +8,5 @@
       force_reregister: true
       
   - name: Unregister the insights client
-    redhat.insights.insights_regsiter:
+    redhat.insights.insights_register:
       state: absent
