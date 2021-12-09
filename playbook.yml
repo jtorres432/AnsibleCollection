@@ -2,8 +2,7 @@
 - name: Collections test with insights
   hosts: all
   tasks:
-  
   - name: Register the insights client
     insights_register:
       state: present
-  
+      force_reregister: true
