@@ -1,4 +1,4 @@
----
+t---
 - name: Use collection to watch Tower itself
   hosts: all
   tasks:
@@ -14,4 +14,4 @@
     
   - name: Print
     debug:
-      msg: "{{ jobs.count }}"
+      msg: "{{ jobs.results}}"
