@@ -1,4 +1,10 @@
 ---
-- name: Colelctions test with insights
+- name: Collections test with insights
   hosts: all
+  tasks:
+  
+  - name: Register client
+    insights_register:
+      state: present
+      force_reregster: true
   
