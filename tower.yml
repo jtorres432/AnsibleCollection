@@ -14,4 +14,4 @@
     
   - name: Print
     debug:
-      msg: "{{ jobs.results.id | json_query('[].id') }}"
+      msg: "{{ jobs.results | json_query('[].id') }}"
