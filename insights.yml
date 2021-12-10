@@ -6,7 +6,7 @@
     redhat.insights.insights_register:
       state: present
       force_reregister: true
-      
-  - name: Unregister the insights client
-    redhat.insights.insights_register:
-      state: absent
+     
+#  - name: Unregister the insights client
+#   redhat.insights.insights_register:
+#      state: absent
